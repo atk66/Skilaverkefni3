@@ -1,0 +1,42 @@
+export const data = [
+    {
+      question: "bla?",
+      option1: "byh",
+      option2: "hhh",
+      option3: "kkk",
+      option4: "kkk",
+      ans: 3,
+    },
+    {
+      question: "yjyj?",
+      option1: "yjyj",
+      option2: "jyyj",
+      option3: "jyy",
+      option4: "yjyj",
+      ans: 1,
+    },
+    {
+      question: "yjyj?",
+      option1: "yjyj",
+      option2: "yjyj",
+      option3: "yyyd",
+      option4: "yjyj",
+      ans: 2,
+    },
+    {
+      question: "yjyj?",
+      option1: "yjjy",
+      option2: "yjyj",
+      option3: "yjy",
+      option4: "yy",
+      ans: 2,
+    },
+    {
+      question: "yy?",
+      option1: "yjy",
+      option2: "yyjjy",
+      option3: "yjyj",
+      option4: "yy",
+      ans: 1,
+    },
+  ];
