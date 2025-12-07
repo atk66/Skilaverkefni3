@@ -20,14 +20,14 @@ const Quiz = () => {
     const checkAns = (e,ans) => {
         if (lock === false) {
             if (question.ans===ans) {
-            e.target.classList.add("Rétt");
+            e.target.classList.add("correct");
             setLock(true);
             setScore(prev=>prev+1);
         }
         else{
-            e.target.classList.add("Rangt");
+            e.target.classList.add("wrong");
             setLock(true);
-            option_array[question.ans-1].current.classList.add("Rétt");
+            option_array[question.ans-1].current.classList.add("correct");
         }
 
     }
@@ -43,8 +43,8 @@ const Quiz = () => {
         setQuestion(data[index]);
         setLock(false);
         option_array.map((option)=>{
-            option.current.classList.remove("Rangt");
-            option.current.classList.remove("Rétt");
+            option.current.classList.remove("wrong");
+            option.current.classList.remove("correct");
             return null;
 
         })
@@ -66,7 +66,7 @@ const Quiz = () => {
         <h1>Quiz App</h1>
         <hr />
         {result?<></>:<>
-        <h2>{index+1}. {question.question}</h2>
+        <h2>{index+1}.{question.question}</h2>
         <ul>
             <li ref={Option1} onClick={(e)=>{checkAns(e,1)}}>{question.option1}</li>
             <li ref={Option2} onClick={(e)=>{checkAns(e,2)}}>{question.option2}</li>

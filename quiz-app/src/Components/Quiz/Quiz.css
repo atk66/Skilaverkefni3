@@ -44,15 +44,15 @@
     .container .index{
         margin: auto;
         font-size: 18px;
-        color: rgb(146, 9, 128);
+        color: rgb(85, 4, 74);
 
 
     }
-    .container .Rétt{
+    .container .correct{
         background: #dad8d8;
         border-color: aquamarine;
     }
-    .container .Rangt{
+    .container .wrong{
         background: #cfcdcd;
         border-color: rgb(223, 40, 16);
     }
