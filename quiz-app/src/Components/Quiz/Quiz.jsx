@@ -6,7 +6,7 @@ const Quiz = () => {
 
     let [index,setIndex] = useState(0);
     let [question,setQuestion] = useState(data[index]);
-    let [lock,setLock] =useState(false);
+    let [lock,setLock] = useState(false);
     let [score,setScore] = useState(0);
     let [result,setResult] = useState(false);
 
@@ -35,7 +35,7 @@ const Quiz = () => {
 
  const next = ()=>{
     if (lock===true) {
-        if(index === data.length -1) {
+        if (index === data.length -1) {
             setResult(true);
             return 0;
         }
@@ -66,7 +66,7 @@ const Quiz = () => {
         <h1>Quiz App</h1>
         <hr />
         {result?<></>:<>
-        <h2>{index+1}.{question.question}</h2>
+        <h2>{index+1}. {question.question}</h2>
         <ul>
             <li ref={Option1} onClick={(e)=>{checkAns(e,1)}}>{question.option1}</li>
             <li ref={Option2} onClick={(e)=>{checkAns(e,2)}}>{question.option2}</li>
